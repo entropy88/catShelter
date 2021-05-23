@@ -1,0 +1,17 @@
+
+<ul>
+    {{#each cats}}
+ 
+    <li>
+        <img src="https://cdn.pixabay.com/photo/2015/03/27/13/16/cat-694730_1280.jpg" alt="Black Cat">
+        <h3>{{this.catName}}</h3>
+        <p><span>Breed: </span>{{this.breed}}</p>
+        <p><span>Description: </span>{{this.description}}.</p>
+        <ul class="buttons">
+            <li class="btn edit"><a href="">Change Info</a></li>
+            <li class="btn delete"><a href="">New Home</a></li>
+        </ul>
+    </li>
+
+    {{/each}}
+</ul>
